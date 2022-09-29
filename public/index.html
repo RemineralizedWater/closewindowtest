@@ -27,6 +27,24 @@
     <title>React App</title>
   </head>
   <body>
+
+    <h1>The Window Object</h1>
+    <h2>The open() and close() Methods</h2>
+    
+    <button onclick="openWin()">Open "myWindow"</button>
+    <button onclick="closeWin()">Close "myWindow"</button>
+    
+    <script>
+    let myWindow;
+    
+    function openWin() {
+      myWindow = window.open("", "", "width=200,height=100");
+    }
+    
+    function closeWin() {
+      myWindow.close();
+    }
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
